@@ -1,0 +1,1346 @@
+
+ Ansys Mechanical Enterprise Academic Student      
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2025 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2025 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2025 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys Service Pack 2025 R1.1978677652   
+ Ansys Dynamic Reporting 2025 R1.1978677652  
+ Core WB Files 2025 R1.1978677652
+ CFX (includes CFD-Post) 2025 R1.1978677652  
+ Chemkin 2025 R1.1978677652  
+ EnSight 2025 R1.1978677652  
+ FENSAP-ICE 2025 R1.1978677652   
+ Fluent (includes CFD-Post) 2025 R1.1978677652   
+ Polyflow (includes CFD-Post) 2025 R1.1978677652 
+ Forte (includes EnSight) 2025 R1.1978677652 
+ Rocky 2025 R1.1978677652
+ TurboGrid 2025 R1.1978677652
+ ACIS Geometry Interface 2025 R1.1978677652  
+ AutoCAD Geometry Interface 2025 R1.1978677652   
+ Catia, Version 4 Geometry Interface 2025 R1.1978677652  
+ Catia, Version 5 Geometry Interface 2025 R1.1978677652  
+ Catia, Version 6 Geometry Interface 2025 R1.1978677652  
+ Creo Elements/Direct Modeling Geometry Interface 2025 R1.1978677652 
+ Creo Parametric Geometry Interface 2025 R1.1978677652   
+ Inventor Geometry Interface 2025 R1.1978677652  
+ JTOpen Geometry Interface 2025 R1.1978677652
+ NX Geometry Interface 2025 R1.1978677652
+ Parasolid Geometry Interface  2025 R1.1978677652
+ Solid Edge Geometry Interface 2025 R1.1978677652
+ SOLIDWORKS Geometry Interface 2025 R1.1978677652
+ Speos 2025 R1.1978677652
+ SpaceClaim 2025 R1.1978677652   
+ Speos RPC 2025 R1.1978677652
+ Aqwa 2025 R1.1978677652 
+ Autodyn 2025 R1.1978677652  
+ Material Calibration App 2025 R1.1978677652 
+ Mechanical Products 2025 R1.1978677652  
+ Motion 2025 R1.1978677652   
+ Academic Student 2025 R1.1978677652 
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = LIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  INPUT FILE NAME              = C:\Users\Leona\Documents\Mestrado\Python\mefbuck_flexural_uniform.inp
+  OUTPUT FILE NAME             = C:\Users\Leona\Documents\Mestrado\Python\mefbuck_flexural_uniform.out
+  INITIAL DIRECTORY = C:\Users\Leona\Documents\Mestrado\Python
+
+ RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  00:49:59  JUN 10, 2025 CP=      0.109
+
+     1  /batch  
+     2  /config,noeldb,1     ! force off writing results to database
+     3  *get,_wallstrt,active,,time,wall
+     4  ! ANSYS input file written by Workbench version 2025 R1 
+     5  ! File used for geometry attach: C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\dp0\SYS-8\DM\SYS-8.scdocx   
+     6  /title,Modelos flambagem perfis pultrudados_att--Static Structural (F5) 
+     7  ! ****** Begin Custom Load Command Snippet ******   
+     8  /COM, ACT Extensions:   
+     9  /COM,     LSDYNA, 2025.1
+    10  /COM,     5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+    11  /COM,/COM,     ANSYSMotion, 2025.1  
+    12  /COM,     20180725-3f81-49eb-9f31-41364844c769, wbex
+    13  /COM,   
+    14  ! ****** End   Custom Load Command Snippet ******   
+    15  *DIM,_wb_ProjectScratch_dir,string,248  
+    16  _wb_ProjectScratch_dir(1) = 'C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\dp0\SYS-12\MECH\'   
+    17  *DIM,_wb_SolverFiles_dir,string,248 
+    18  _wb_SolverFiles_dir(1) = 'C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\dp0\SYS-12\MECH\'  
+    19  *DIM,_wb_userfiles_dir,string,248   
+    20  _wb_userfiles_dir(1) = 'C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\user_files\' 
+    21  /com,--- Data in consistent NMM units. See Solving Units in the help system for more information.   
+    22  /units,MPA  
+    23  /nopr   
+    24  /wb,file,start              !  signify a WB generated input file
+    25  /prep7  
+    26  ! Turn off shape checking because checks already performed inside WB mesher.
+    27  ! See help system for more information. 
+    28  SHPP,OFF,,NOWARN
+ ***** LISTING SUSPENDED *****
+ ***** LISTING RESUMED *****
+ 13288  /wb,load,start             !  starting to send loads
+ 13289  /com,*********** Create Displacement Components For Use In Future MSUP or Multistage Analysis ******
+ 13290  CMBLOCK,_CM104_DISP,NODE,        7  
+ 13291  (8i10)  
+ 13292          11        12        14      3885      3886      4415      4416  
+ 13293  /com,*********** Create Displacement Components For Use In Future MSUP or Multistage Analysis ******
+ 13294  CMBLOCK,_CM110_DISP,NODE,        7  
+ 13295  (8i10)  
+ 13296           9        17        18       415       416       815       816  
+ 13297  /com,******* Constant Zero Displacement X *******   
+ 13298  CMBLOCK,_DISPZEROUX,NODE,       14  
+ 13299  (8i10)  
+ 13300           9        11        12        14        17        18       415       416
+ 13301         815       816      3885      3886      4415      4416
+ 13302  cmsel,s,_DISPZEROUX 
+ 13303  d,all,ux,0  
+ 13304  nsel,all
+ 13305  /com,******* Constant Zero Displacement Y *******   
+ 13306  CMBLOCK,_DISPZEROUY,NODE,       14  
+ 13307  (8i10)  
+ 13308           9        11        12        14        17        18       415       416
+ 13309         815       816      3885      3886      4415      4416
+ 13310  cmsel,s,_DISPZEROUY 
+ 13311  d,all,uy,0  
+ 13312  nsel,all
+ 13313  /com,******* Constant Zero Displacement Z *******   
+ 13314  CMBLOCK,_DISPZEROUZ,NODE,       14  
+ 13315  (8i10)  
+ 13316           9        11        12        14        17        18       415       416
+ 13317         815       816      3885      3886      4415      4416
+ 13318  cmsel,s,_DISPZEROUZ 
+ 13319  d,all,uz,0  
+ 13320  nsel,all
+ 13321  /com,********** Rotational Supports Z **********
+ 13322  CMBLOCK,_ROTSUZ ,NODE,       50 
+ 13323  (8i10)  
+ 13324           3         4         6         8         9        11        12        14
+ 13325          15        16        17        18       415       416       815       816
+ 13326        2403      2404      2405      2406      2407      2408      2409      2410
+ 13327        2411      2412      2413      3085      3086      3485      3486      3885
+ 13328        3886      4415      4416      5869      5870      5871      5872      5873
+ 13329        5874      5875      5876      5877      5878      5879      6276      6277
+ 13330        6542      6543
+ 13331  cmsel,s,_ROTSUZ 
+ 13332  d,all,rotz,0
+ 13333  nsel,all
+ 13334  /com,*********** Define Force Using Surface Effect Elements *********** 
+ 13335  local,14,0,0.,0.,0.,0.,0.,0.
+ 13336  csys,0  
+ 13337  et,7,156
+ 13338  keyop,7,5,1         !  No orientation node  
+ 13339  eblock,10,,,266 
+ 13340  (15i9)  
+ 13341       6388        7        7        7       14     2545        4 
+ 13342       6389        7        7        7       14     2544     2545 
+ 13343       6390        7        7        7       14     2543     2544 
+ 13344       6391        7        7        7       14     2542     2543 
+ 13345       6392        7        7        7       14     2541     2542 
+ 13346       6393        7        7        7       14     2540     2541 
+ 13347       6394        7        7        7       14     2539     2540 
+ 13348       6395        7        7        7       14     2538     2539 
+ 13349       6396        7        7        7       14     2537     2538 
+ 13350       6397        7        7        7       14     2536     2537 
+ 13351       6398        7        7        7       14     2535     2536 
+ 13352       6399        7        7        7       14     2534     2535 
+ 13353       6400        7        7        7       14     2533     2534 
+ 13354       6401        7        7        7       14     2532     2533 
+ 13355       6402        7        7        7       14     2531     2532 
+ 13356       6403        7        7        7       14     2530     2531 
+ 13357       6404        7        7        7       14     2529     2530 
+ 13358       6405        7        7        7       14     2528     2529 
+ 13359       6406        7        7        7       14     2527     2528 
+ 13360       6407        7        7        7       14     2526     2527 
+ 13361       6408        7        7        7       14     2525     2526 
+ 13362       6409        7        7        7       14     2524     2525 
+ 13363       6410        7        7        7       14     2523     2524 
+ 13364       6411        7        7        7       14     2522     2523 
+ 13365       6412        7        7        7       14     2521     2522 
+ 13366       6413        7        7        7       14     2520     2521 
+ 13367       6414        7        7        7       14     2519     2520 
+ 13368       6415        7        7        7       14     2518     2519 
+ 13369       6416        7        7        7       14     2517     2518 
+ 13370       6417        7        7        7       14     2516     2517 
+ 13371       6418        7        7        7       14     2515     2516 
+ 13372       6419        7        7        7       14     2514     2515 
+ 13373       6420        7        7        7       14     2513     2514 
+ 13374       6421        7        7        7       14     2512     2513 
+ 13375       6422        7        7        7       14     2511     2512 
+ 13376       6423        7        7        7       14     2510     2511 
+ 13377       6424        7        7        7       14     2509     2510 
+ 13378       6425        7        7        7       14     2508     2509 
+ 13379       6426        7        7        7       14     2507     2508 
+ 13380       6427        7        7        7       14     2506     2507 
+ 13381       6428        7        7        7       14     2505     2506 
+ 13382       6429        7        7        7       14     2504     2505 
+ 13383       6430        7        7        7       14     2503     2504 
+ 13384       6431        7        7        7       14     2502     2503 
+ 13385       6432        7        7        7       14     2501     2502 
+ 13386       6433        7        7        7       14     2500     2501 
+ 13387       6434        7        7        7       14     2499     2500 
+ 13388       6435        7        7        7       14     2498     2499 
+ 13389       6436        7        7        7       14     2497     2498 
+ 13390       6437        7        7        7       14     2496     2497 
+ 13391       6438        7        7        7       14     2495     2496 
+ 13392       6439        7        7        7       14     2494     2495 
+ 13393       6440        7        7        7       14     2493     2494 
+ 13394       6441        7        7        7       14     2492     2493 
+ 13395       6442        7        7        7       14     2491     2492 
+ 13396       6443        7        7        7       14     2490     2491 
+ 13397       6444        7        7        7       14     2489     2490 
+ 13398       6445        7        7        7       14     2488     2489 
+ 13399       6446        7        7        7       14     2487     2488 
+ 13400       6447        7        7        7       14     2486     2487 
+ 13401       6448        7        7        7       14     2485     2486 
+ 13402       6449        7        7        7       14     2484     2485 
+ 13403       6450        7        7        7       14     2483     2484 
+ 13404       6451        7        7        7       14     2482     2483 
+ 13405       6452        7        7        7       14     2481     2482 
+ 13406       6453        7        7        7       14     2480     2481 
+ 13407       6454        7        7        7       14     2479     2480 
+ 13408       6455        7        7        7       14     2478     2479 
+ 13409       6456        7        7        7       14     2477     2478 
+ 13410       6457        7        7        7       14     2476     2477 
+ 13411       6458        7        7        7       14     2475     2476 
+ 13412       6459        7        7        7       14     2474     2475 
+ 13413       6460        7        7        7       14     2473     2474 
+ 13414       6461        7        7        7       14     2472     2473 
+ 13415       6462        7        7        7       14     2471     2472 
+ 13416       6463        7        7        7       14     2470     2471 
+ 13417       6464        7        7        7       14     2469     2470 
+ 13418       6465        7        7        7       14     2468     2469 
+ 13419       6466        7        7        7       14     2467     2468 
+ 13420       6467        7        7        7       14     2466     2467 
+ 13421       6468        7        7        7       14     2465     2466 
+ 13422       6469        7        7        7       14     2464     2465 
+ 13423       6470        7        7        7       14     2463     2464 
+ 13424       6471        7        7        7       14     2462     2463 
+ 13425       6472        7        7        7       14     2461     2462 
+ 13426       6473        7        7        7       14     2460     2461 
+ 13427       6474        7        7        7       14     2459     2460 
+ 13428       6475        7        7        7       14     2458     2459 
+ 13429       6476        7        7        7       14     2457     2458 
+ 13430       6477        7        7        7       14     2456     2457 
+ 13431       6478        7        7        7       14     2455     2456 
+ 13432       6479        7        7        7       14     2454     2455 
+ 13433       6480        7        7        7       14     2453     2454 
+ 13434       6481        7        7        7       14     2452     2453 
+ 13435       6482        7        7        7       14     2451     2452 
+ 13436       6483        7        7        7       14     2450     2451 
+ 13437       6484        7        7        7       14     2449     2450 
+ 13438       6485        7        7        7       14     2448     2449 
+ 13439       6486        7        7        7       14     2447     2448 
+ 13440       6487        7        7        7       14     2446     2447 
+ 13441       6488        7        7        7       14     2445     2446 
+ 13442       6489        7        7        7       14     2444     2445 
+ 13443       6490        7        7        7       14     2443     2444 
+ 13444       6491        7        7        7       14     2442     2443 
+ 13445       6492        7        7        7       14     2441     2442 
+ 13446       6493        7        7        7       14     2440     2441 
+ 13447       6494        7        7        7       14     2439     2440 
+ 13448       6495        7        7        7       14     2438     2439 
+ 13449       6496        7        7        7       14     2437     2438 
+ 13450       6497        7        7        7       14     2436     2437 
+ 13451       6498        7        7        7       14     2435     2436 
+ 13452       6499        7        7        7       14     2434     2435 
+ 13453       6500        7        7        7       14     2433     2434 
+ 13454       6501        7        7        7       14     2432     2433 
+ 13455       6502        7        7        7       14     2431     2432 
+ 13456       6503        7        7        7       14     2430     2431 
+ 13457       6504        7        7        7       14     2429     2430 
+ 13458       6505        7        7        7       14     2428     2429 
+ 13459       6506        7        7        7       14     2427     2428 
+ 13460       6507        7        7        7       14     2426     2427 
+ 13461       6508        7        7        7       14     2425     2426 
+ 13462       6509        7        7        7       14     2424     2425 
+ 13463       6510        7        7        7       14     2423     2424 
+ 13464       6511        7        7        7       14     2422     2423 
+ 13465       6512        7        7        7       14     2421     2422 
+ 13466       6513        7        7        7       14     2420     2421 
+ 13467       6514        7        7        7       14     2419     2420 
+ 13468       6515        7        7        7       14     2418     2419 
+ 13469       6516        7        7        7       14     2417     2418 
+ 13470       6517        7        7        7       14     2416     2417 
+ 13471       6518        7        7        7       14     2415     2416 
+ 13472       6519        7        7        7       14     2414     2415 
+ 13473       6520        7        7        7       14        2     2414 
+ 13474       6521        7        7        7       14     3089        8 
+ 13475       6522        7        7        7       14     3090     3089 
+ 13476       6523        7        7        7       14     3091     3090 
+ 13477       6524        7        7        7       14     3092     3091 
+ 13478       6525        7        7        7       14     3093     3092 
+ 13479       6526        7        7        7       14     3094     3093 
+ 13480       6527        7        7        7       14     3095     3094 
+ 13481       6528        7        7        7       14     3096     3095 
+ 13482       6529        7        7        7       14     3097     3096 
+ 13483       6530        7        7        7       14     3098     3097 
+ 13484       6531        7        7        7       14     3099     3098 
+ 13485       6532        7        7        7       14     3100     3099 
+ 13486       6533        7        7        7       14     3101     3100 
+ 13487       6534        7        7        7       14     3102     3101 
+ 13488       6535        7        7        7       14     3103     3102 
+ 13489       6536        7        7        7       14     3104     3103 
+ 13490       6537        7        7        7       14     3105     3104 
+ 13491       6538        7        7        7       14     3106     3105 
+ 13492       6539        7        7        7       14     3107     3106 
+ 13493       6540        7        7        7       14     3108     3107 
+ 13494       6541        7        7        7       14     3109     3108 
+ 13495       6542        7        7        7       14     3110     3109 
+ 13496       6543        7        7        7       14     3111     3110 
+ 13497       6544        7        7        7       14     3112     3111 
+ 13498       6545        7        7        7       14     3113     3112 
+ 13499       6546        7        7        7       14     3114     3113 
+ 13500       6547        7        7        7       14     3115     3114 
+ 13501       6548        7        7        7       14     3116     3115 
+ 13502       6549        7        7        7       14     3117     3116 
+ 13503       6550        7        7        7       14     3118     3117 
+ 13504       6551        7        7        7       14     3119     3118 
+ 13505       6552        7        7        7       14     3120     3119 
+ 13506       6553        7        7        7       14     3121     3120 
+ 13507       6554        7        7        7       14     3122     3121 
+ 13508       6555        7        7        7       14     3123     3122 
+ 13509       6556        7        7        7       14     3124     3123 
+ 13510       6557        7        7        7       14     3125     3124 
+ 13511       6558        7        7        7       14     3126     3125 
+ 13512       6559        7        7        7       14     3127     3126 
+ 13513       6560        7        7        7       14     3128     3127 
+ 13514       6561        7        7        7       14     3129     3128 
+ 13515       6562        7        7        7       14     3130     3129 
+ 13516       6563        7        7        7       14     3131     3130 
+ 13517       6564        7        7        7       14     3132     3131 
+ 13518       6565        7        7        7       14     3133     3132 
+ 13519       6566        7        7        7       14     3134     3133 
+ 13520       6567        7        7        7       14     3135     3134 
+ 13521       6568        7        7        7       14     3136     3135 
+ 13522       6569        7        7        7       14     3137     3136 
+ 13523       6570        7        7        7       14     3138     3137 
+ 13524       6571        7        7        7       14     3139     3138 
+ 13525       6572        7        7        7       14     3140     3139 
+ 13526       6573        7        7        7       14     3141     3140 
+ 13527       6574        7        7        7       14     3142     3141 
+ 13528       6575        7        7        7       14     3143     3142 
+ 13529       6576        7        7        7       14     3144     3143 
+ 13530       6577        7        7        7       14     3145     3144 
+ 13531       6578        7        7        7       14     3146     3145 
+ 13532       6579        7        7        7       14     3147     3146 
+ 13533       6580        7        7        7       14     3148     3147 
+ 13534       6581        7        7        7       14     3149     3148 
+ 13535       6582        7        7        7       14     3150     3149 
+ 13536       6583        7        7        7       14     3151     3150 
+ 13537       6584        7        7        7       14     3152     3151 
+ 13538       6585        7        7        7       14     3153     3152 
+ 13539       6586        7        7        7       14     3154     3153 
+ 13540       6587        7        7        7       14     3155     3154 
+ 13541       6588        7        7        7       14     3156     3155 
+ 13542       6589        7        7        7       14     3157     3156 
+ 13543       6590        7        7        7       14     3158     3157 
+ 13544       6591        7        7        7       14     3159     3158 
+ 13545       6592        7        7        7       14     3160     3159 
+ 13546       6593        7        7        7       14     3161     3160 
+ 13547       6594        7        7        7       14     3162     3161 
+ 13548       6595        7        7        7       14     3163     3162 
+ 13549       6596        7        7        7       14     3164     3163 
+ 13550       6597        7        7        7       14     3165     3164 
+ 13551       6598        7        7        7       14     3166     3165 
+ 13552       6599        7        7        7       14     3167     3166 
+ 13553       6600        7        7        7       14     3168     3167 
+ 13554       6601        7        7        7       14     3169     3168 
+ 13555       6602        7        7        7       14     3170     3169 
+ 13556       6603        7        7        7       14     3171     3170 
+ 13557       6604        7        7        7       14     3172     3171 
+ 13558       6605        7        7        7       14     3173     3172 
+ 13559       6606        7        7        7       14     3174     3173 
+ 13560       6607        7        7        7       14     3175     3174 
+ 13561       6608        7        7        7       14     3176     3175 
+ 13562       6609        7        7        7       14     3177     3176 
+ 13563       6610        7        7        7       14     3178     3177 
+ 13564       6611        7        7        7       14     3179     3178 
+ 13565       6612        7        7        7       14     3180     3179 
+ 13566       6613        7        7        7       14     3181     3180 
+ 13567       6614        7        7        7       14     3182     3181 
+ 13568       6615        7        7        7       14     3183     3182 
+ 13569       6616        7        7        7       14     3184     3183 
+ 13570       6617        7        7        7       14     3185     3184 
+ 13571       6618        7        7        7       14     3186     3185 
+ 13572       6619        7        7        7       14     3187     3186 
+ 13573       6620        7        7        7       14     3188     3187 
+ 13574       6621        7        7        7       14     3189     3188 
+ 13575       6622        7        7        7       14     3190     3189 
+ 13576       6623        7        7        7       14     3191     3190 
+ 13577       6624        7        7        7       14     3192     3191 
+ 13578       6625        7        7        7       14     3193     3192 
+ 13579       6626        7        7        7       14     3194     3193 
+ 13580       6627        7        7        7       14     3195     3194 
+ 13581       6628        7        7        7       14     3196     3195 
+ 13582       6629        7        7        7       14     3197     3196 
+ 13583       6630        7        7        7       14     3198     3197 
+ 13584       6631        7        7        7       14     3199     3198 
+ 13585       6632        7        7        7       14     3200     3199 
+ 13586       6633        7        7        7       14     3201     3200 
+ 13587       6634        7        7        7       14     3202     3201 
+ 13588       6635        7        7        7       14     3203     3202 
+ 13589       6636        7        7        7       14     3204     3203 
+ 13590       6637        7        7        7       14     3205     3204 
+ 13591       6638        7        7        7       14     3206     3205 
+ 13592       6639        7        7        7       14     3207     3206 
+ 13593       6640        7        7        7       14     3208     3207 
+ 13594       6641        7        7        7       14     3209     3208 
+ 13595       6642        7        7        7       14     3210     3209 
+ 13596       6643        7        7        7       14     3211     3210 
+ 13597       6644        7        7        7       14     3212     3211 
+ 13598       6645        7        7        7       14     3213     3212 
+ 13599       6646        7        7        7       14     3214     3213 
+ 13600       6647        7        7        7       14     3215     3214 
+ 13601       6648        7        7        7       14     3216     3215 
+ 13602       6649        7        7        7       14     3217     3216 
+ 13603       6650        7        7        7       14     3218     3217 
+ 13604       6651        7        7        7       14     3219     3218 
+ 13605       6652        7        7        7       14     3220     3219 
+ 13606       6653        7        7        7       14        2     3220 
+ 13607  -1  
+ 13608  esel,s,type,,7  
+ 13609  keyop,7,2,1         ! Apply load in local coordinate system 
+ 13610  keyop,7,7,1         ! Use original area so load is constant in large deformation
+ 13611  esel,all
+ 13612  /gst,on,on  
+ 13613  fini
+ 13614  *get,_numnode,node,0,count  
+ 13615  *get,_numelem,elem,0,count  
+ 13616  *get, _MAXELEMNUM, elem, 0, NUM, MAX
+ 13617  *get, _MAXNODENUM, node, 0, NUM, MAX
+ 13618  *get, _MAXELEMTYPE, etyp, 0, NUM, MAX   
+ 13619  *get, _MAXREALCONST, rcon, 0, NUM, MAX  
+ 13620  /go 
+ 13621  /wb,load,end               !  done creating loads   
+ 13622  /com,--- Number of total nodes = %_numnode% 
+ 13623  /com,--- Number of contact elements = 266   
+ 13624  /com,--- Number of spring elements = 0  
+ 13625  /com,--- Number of bearing elements = 0 
+ 13626  /com,--- Number of solid elements = 6384
+ 13627  /com,--- Number of condensed parts = 0  
+ 13628  /com,--- Number of total elements = %_numelem%  
+ 13629  *get,_wallbsol,active,,time,wall
+ 13630  /com,****************************************************************************   
+ 13631  /com,*************************    SOLUTION       ********************************   
+ 13632  /com,****************************************************************************   
+ 13633  /solu   
+ 13634  antype,0                   ! static analysis
+ 13635  _thickRatio=  0     ! Ratio of thick parts in the model 
+ 13636  eqsl,sparse,,,,,1   
+ 13637  cntr,print,1               ! print out contact info and also make no initial contact an error   
+ 13638  nldiag,cont,iter           ! print out contact info each equilibrium iteration  
+ 13639  rescontrol,linear,last           ! Turn on restart files due to future eigen analysis intent
+ 13640  /com,****************************************************   
+ 13641  /com,******************* SOLVE FOR LS 1 OF 1 ****************   
+ 13642  esel,s,type,,7  
+ 13643  nsle
+ 13644  sfe,all,1,pres,1,0. 
+ 13645  sfe,all,2,pres,1,-2.5e-004  
+ 13646  sfe,all,3,pres,1,0. 
+ 13647  nsel,all
+ 13648  esel,all
+ 13649  /nopr   
+ 13650  /gopr   
+ 13651  nsub,1,1,1  
+ 13652  time,1. 
+ 13653  outres,erase
+ 13654  outres,all,none 
+ 13655  outres,nsol,all,
+ 13656  outres,rsol,all 
+ 13657  outres,eangl,all
+ 13658  outres,etmp,all 
+ 13659  outres,veng,all 
+ 13660  outres,strs,all,
+ 13661  outres,epel,all,
+ 13662  outres,eppl,all,
+ 13663  outres,cont,all,
+ 13664  ! *********** WB SOLVE COMMAND ***********  
+ 13665  solve   
+ 13666  /gopr   
+ 13667  /POST1  
+ 13668  SET,LAST
+ 13669  PLNSOL, S, EQV  
+ 13670      
+ 13671  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 13672  ! LINEAR EIGENVALUE BUCKLING
+ 13673  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 13674  /SOLU   
+ 13675  ANTYPE,1
+ 13676  bucopt,lanb,1,,,center  
+ 13677  outres,erase
+ 13678  outres,all,none 
+ 13679  outres,nsol,all 
+ 13680  mxpand  
+ 13681  solve   
+ 13682      
+ 13683  /POST1  
+ 13684  SET,1,1 
+ 13685  PLNSOL, U, SUM  
+ 13686  *GET, UMAXIMO, PLNSOL, 0, MAX   
+ 13687  *GET,Fcrit,ACTIVE,0,SET,FREQ
+
+ RUN SETUP PROCEDURE FROM FILE= C:\Program Files\ANSYS Inc\ANSYS Student\v251\ANSYS\apdl\start.ans
+
+ /INPUT FILE= C:\Program Files\ANSYS Inc\ANSYS Student\v251\ANSYS\apdl\start.ans  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.594   TIME= 00:50:00
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.833333333    
+
+ TITLE= 
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+  ACT Extensions:
+      LSDYNA, 2025.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+ /COM,     ANSYSMotion, 2025.1
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\dp0\SYS-12\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\dp0\SYS-12\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\Leona\Documents\Mestrado\ANSYS\Modelos flambagem perfis pultrudados_att_files\user_files\
+ --- Data in consistent NMM units. See Solving Units in the help system for more
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:00  JUN 10, 2025 CP=      0.625
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Nodes for all Remote Points ***********
+ *********** Elements for Body 1 'Surface' ***********
+ *********** Elements for Body 2 'Surface' ***********
+ *********** Elements for Body 3 'Surface' ***********
+ *********** Elements for Body 4 'Surface1' ***********
+ *********** Elements for Body 5 'Surface1' ***********
+ *********** Elements for Body 6 'Surface1' ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Sheet Properties ***********
+ *********** Create Displacement Components For Use In Future MSUP or Multistage
+ *********** Create Displacement Components For Use In Future MSUP or Multistage
+ ******* Constant Zero Displacement X *******
+ ******* Constant Zero Displacement Y *******
+ ******* Constant Zero Displacement Z *******
+ ********** Rotational Supports Z **********
+ *********** Define Force Using Surface Effect Elements ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.766
+
+
+ --- Number of total nodes = 6676
+ --- Number of contact elements = 266
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 6384
+ --- Number of condensed parts = 0
+ --- Number of total elements = 6650
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.833333333    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DEFINE RESTART CONTROL FOR LOADSTEP LAST
+ AT FREQUENCY OF LAST AND NUMBER FOR OVERWRITE IS   -1
+
+ WRITE MULTIFRAME RESTART FILES EVEN
+ WHEN IT IS A LINEAR STATIC ANALYSIS
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         7 TO          7 STEP          1
+
+        266  ELEMENTS (OF       6650  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+        267 NODES (OF       6676  DEFINED) SELECTED FROM
+      266 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  1   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  2   KVAL = 1
+     VALUES =   -0.25000E-03   -0.25000E-03   -0.25000E-03   -0.25000E-03
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO       6678 STEP          1
+
+       6676  NODES (OF       6676  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO       6653 STEP          1
+
+       6650  ELEMENTS (OF       6650  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *** NOTE ***                            CP =       0.906   TIME= 00:50:00
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 4 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.906   TIME= 00:50:00
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       1.062   TIME= 00:50:00
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\Leona\Documents\Mestrado\Python\file0.err ) for these warning  
+ messages.                                                               
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+ ELEMENT TYPE         2 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+ ELEMENT TYPE         3 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+ ELEMENT TYPE         4 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+ ELEMENT TYPE         5 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+ ELEMENT TYPE         6 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8)=2 IS SUGGESTED AND KEYOPT(3)=2 IS SUGGESTED FOR
+ HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE, KEYOPT(3)=0 IS SUGGESTED. 
+ KEYOPT(8) HAS BEEN RESET BUT KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+  KEYOPT(1-12)=    0    0    2    0    0    0    0    2    0    0    0    0
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:00  JUN 10, 2025 CP=      1.109
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** NOTE ***                            CP =       1.109   TIME= 00:50:00
+ Poisson's ratio PR input has been converted to NU input.                
+
+ *** WARNING ***                         CP =       1.109   TIME= 00:50:00
+ Material number 7 (used by element 6388) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       1.156   TIME= 00:50:00
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\Leona\Documents\Mestrado\Python\file0.err ) for these warning  
+ messages.                                                               
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 6650
+  ...Number of nodes:    6676
+  ...Decompose to 4 CPU domains
+  ...Element load balance ratio =     1.040
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** NOTE ***                            CP =       1.875   TIME= 00:50:01
+ Predictor is ON by default for structural elements with rotational      
+ degrees of freedom.  Use the PRED,OFF command to turn the predictor     
+ OFF if it adversely affects the convergence.                            
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+         28.956        0.0000        0.0000     |     0.0000        57912.      -0.41772E-12
+         0.0000        28.956        0.0000     |    -57912.        0.0000       0.41455E-11
+         0.0000        0.0000        28.956     |    0.41772E-12  -0.41455E-11    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.15461E+09  -0.19666E-10  -0.13210E-07
+                                                |   -0.19666E-10   0.15444E+09  -0.13829E-08
+                                                |   -0.13211E-07  -0.13672E-08   0.18834E+06
+
+   TOTAL MASS =  28.956    
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.14317E-12   0.14426E-13    2000.0    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.38784E+08  -0.19666E-10  -0.49193E-08
+       -0.19666E-10   0.38621E+08  -0.54744E-09
+       -0.49193E-08  -0.54744E-09   0.18834E+06
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1   3.80000    
+     2   6.87800    
+     3   3.80000    
+     4   3.80000    
+     5   6.87800    
+     6   3.80000    
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 6424480.3 at element 501.                                     
+ Minimum = 2040819.65 at element 4729.                                   
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       798  SHELL181      0.125   0.000157
+        2      1596  SHELL181      0.203   0.000127
+        3       798  SHELL181      0.109   0.000137
+        4       798  SHELL181      0.125   0.000157
+        5      1596  SHELL181      0.172   0.000108
+        6       798  SHELL181      0.094   0.000117
+        7       266  SURF156       0.000   0.000000
+ Time at end of element matrix formulation CP = 2.1875.                  
+
+ ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= file.rdb
+  FOR POSSIBLE RESUME FROM THIS POINT
+
+ DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       39958,    Maximum wavefront =     72
+
+
+  Memory allocated on only this MPI rank (rank     0)
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =    26.578 MB
+  Equation solver memory required for in-core mode     =    25.595 MB
+  Equation solver memory required for out-of-core mode =    16.221 MB
+  Total (solver and non-solver) memory allocated       =   444.191 MB
+
+
+  Total memory summed across all MPI ranks on this machines
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =   103.393 MB
+  Equation solver memory required for in-core mode     =    99.479 MB
+  Equation solver memory required for out-of-core mode =    60.400 MB
+  Total (solver and non-solver) memory allocated       =   908.667 MB
+
+ *** NOTE ***                            CP =       3.281   TIME= 00:50:02
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+ curEqn=   9876  totEqn=   9876 Job CP sec=      3.453
+      Factor Done= 100% Factor Wall sec=      0.086 rate=       3.3 GFlops
+ Distributed sparse solver maximum pivot= 12848960.1 at node 415 ROTX.   
+ Distributed sparse solver minimum pivot= 80.2935367 at node 2 UX.       
+ Distributed sparse solver minimum pivot in absolute value= 80.2935367   
+ at node 2 UX.                                                           
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       798  SHELL181      0.078   0.000098
+        2      1596  SHELL181      0.266   0.000166
+        3       798  SHELL181      0.172   0.000215
+        4       798  SHELL181      0.094   0.000117
+        5      1596  SHELL181      0.219   0.000137
+        6       798  SHELL181      0.094   0.000117
+        7       266  SURF156       0.016   0.000059
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       798  SHELL181      0.000   0.000000
+        2      1596  SHELL181      0.016   0.000010
+        3       798  SHELL181      0.000   0.000000
+        4       798  SHELL181      0.016   0.000020
+        5      1596  SHELL181      0.047   0.000029
+        6       798  SHELL181      0.016   0.000020
+        7       266  SURF156       0.000   0.000000
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.188 MB WRITTEN ON ELEMENT MATRIX FILE: file0.emat
+        9.875 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+        2.438 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        2.000 MB WRITTEN ON RESULTS FILE: file0.rst
+
+ PRINTOUT RESUMED BY /GOP
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         4.203
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:03  JUN 10, 2025 CP=      4.219
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =       4.219   TIME= 00:50:03
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+
+ USE LAST SUBSTEP ON RESULT FILE  FOR LOAD CASE 0 
+
+ SET COMMAND GOT LOAD STEP=     1  SUBSTEP=     1  CUMULATIVE ITERATION=     1
+   TIME/FREQUENCY=  1.0000    
+ TITLE= Modelos flambagem perfis pultrudados_att--Static Structural (F5)        
+
+ *** NOTE *** Display device has not yet been specified with the /SHOW command.  Display commands ignored. 
+
+ EXIT THE MAPDL POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =         4.406
+
+
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A BUCKLING ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ *** NOTE ***                            CP =       4.406   TIME= 00:50:04
+ Some analysis options have been reset to their defaults.  Please verify 
+ current settings or respecify as required.                              
+
+
+ USE SYM. BLOCK LANCZOS METHOD TO EXTRACT       1 MODES
+  EXTRACT EIGENVALUES CENTERED ABOUT   0.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+
+ EXPAND ALL EXTRACTED MODES
+  DO NOT CALCULATE ELEMENT RESULTS
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       4.531   TIME= 00:50:04
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       4.750   TIME= 00:50:04
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\Leona\Documents\Mestrado\Python\file0.err ) for these warning  
+ messages.                                                               
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+ ELEMENT TYPE         2 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+ ELEMENT TYPE         3 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+ ELEMENT TYPE         4 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+ ELEMENT TYPE         5 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+ ELEMENT TYPE         6 IS SHELL181. IT IS ASSOCIATED WITH ELASTOPLASTIC 
+ MATERIALS ONLY. KEYOPT(8) IS ALREADY SET AS SUGGESTED. KEYOPT(3)=2 
+ IS SUGGESTED FOR HIGHER ACCURACY OF MEMBRANE STRESSES; OTHERWISE,
+ KEYOPT(3)=0 IS SUGGESTED. KEYOPT(3) CAN NOT BE RESET HERE. PLEASE RESET 
+ IT MANUALLY IF NECESSARY.
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:04  JUN 10, 2025 CP=      4.750
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .BUCKLING             
+      EXTRACTION METHOD. . . . . . . . . . . . . .BLOCK LANCZOS
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   PRESTRESS EFFECTS INCLUDED IF AVAILABLE . . . .YES
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       4.812   TIME= 00:50:04
+ Material number 7 (used by element 6388) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       4.812   TIME= 00:50:04
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\Leona\Documents\Mestrado\Python\file0.err ) for these warning  
+ messages.                                                               
+
+ *** NOTE ***                            CP =       4.812   TIME= 00:50:04
+ The RESCONTROL command only supports static or full transient           
+ structural analysis.  RESCONTROL settings have been de-activated.       
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+
+
+  BLOCK LANCZOS CALCULATION OF UP TO     1 EIGENVECTORS.
+  NUMBER OF EQUATIONS              =        39958
+  MAXIMUM WAVEFRONT                =           66
+  MAXIMUM MODES STORED             =            1
+  MINIMUM EIGENVALUE               = -0.10000E+31
+  MAXIMUM EIGENVALUE               =  0.10000E+31
+  CENTER EIGENVALUE                =  0.00000E+00
+
+
+
+  Memory allocated on only this MPI rank (rank     0)
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =    25.107 MB
+  Equation solver memory required for in-core mode     =    23.957 MB
+  Equation solver memory required for out-of-core mode =    11.934 MB
+  Total (solver and non-solver) memory allocated       =   522.400 MB
+
+
+  Total memory summed across all MPI ranks on this machines
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =    99.868 MB
+  Equation solver memory required for in-core mode     =    95.297 MB
+  Equation solver memory required for out-of-core mode =    45.537 MB
+  Total (solver and non-solver) memory allocated       =  1164.067 MB
+
+ *** NOTE ***                            CP =       6.297   TIME= 00:50:05
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+
+  Process memory required for in-core LANCZOS Workspace             =     21.155807 MB
+  Process memory required for out-of-core LANCZOS Workspace         =     791.546875 KB
+
+  Total   memory required for in-core LANCZOS Workspace             =     81.025940 MB
+  Total   memory required for out-of-core LANCZOS Workspace         =     2.982971 MB
+
+  Lanczos Memory Mode : INCORE
+
+
+  >> Shift # 1 :                                       : 0 Eigenvalues Converged
+
+  >> Shift # 2 :  | |                                : 1 Eigenvalues Converged
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:08  JUN 10, 2025 CP=      9.062
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+  ***** EIGENVALUES (LOAD MULTIPLIERS FOR BUCKLING) *****
+            *** FROM BLOCK LANCZOS ITERATION ***
+
+      SHAPE NUMBER   LOAD MULTIPLIER
+
+            1            11919.672    
+
+
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.188 MB WRITTEN ON ELEMENT MATRIX FILE: file0.emat
+        9.875 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+        6.250 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        0.125 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+        0.812 MB WRITTEN ON RESULTS FILE: file0.rst
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         9.266
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   00:50:08  JUN 10, 2025 CP=      9.281
+
+ Modelos flambagem perfis pultrudados_att--Static Structural (F5)              
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+
+ USE LOAD STEP     1  SUBSTEP     1  FOR LOAD CASE 0 
+
+ SET COMMAND GOT LOAD STEP=     1  SUBSTEP=     1  CUMULATIVE ITERATION=     1
+   TIME/FREQUENCY=  11920.    
+ TITLE= Modelos flambagem perfis pultrudados_att--Static Structural (F5)        
+
+ *GET  UMAXIMO   FROM PLNSOL ITEM=MAX        VALUE=-0.126765060E+31
+
+ *GET  FCRIT     FROM  ACTI  ITEM=SET  FREQ  VALUE=  11919.6719    
+
+ ***** END OF INPUT ENCOUNTERED *****
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          4
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
+
+
+ ***** PROBLEM TERMINATED BY INDICATED ERROR(S) OR BY END OF INPUT DATA *****
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2025 R1            Build: 25.1       Update: UP20241202   Platform: WINDOWS x64 
+Date Run: 06/10/2025   Time: 00:50     Process ID: 131584
+Operating System: Windows 11  (Build: 26100)
+
+Processor Model: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2023.1-Product Build 20230303
+
+Number of machines requested            :    1
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.13 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: mefbuck_flexural_uniform.inp
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             LAPTOP-HHQ7EEK3   C:\Users\Leona\Documents\Mestrado\Python
+     1             LAPTOP-HHQ7EEK3   C:\Users\Leona\Documents\Mestrado\Python
+     2             LAPTOP-HHQ7EEK3   C:\Users\Leona\Documents\Mestrado\Python
+     3             LAPTOP-HHQ7EEK3   C:\Users\Leona\Documents\Mestrado\Python
+ 
+Latency time from master to core     1 =    5.904 microseconds
+Latency time from master to core     2 =    9.746 microseconds
+Latency time from master to core     3 =    5.901 microseconds
+ 
+Communication speed from master to core     1 =  1418.19 MB/sec
+Communication speed from master to core     2 =   226.75 MB/sec
+Communication speed from master to core     3 =   322.67 MB/sec
+
+Total CPU time for main thread                    :        8.3 seconds
+Total CPU time summed for all threads             :       10.1 seconds
+
+Elapsed time spent obtaining a license            :        1.2 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
+Elapsed time spent solution - preprocessing       :        0.3 seconds
+Elapsed time spent computing solution             :        6.8 seconds
+Elapsed time spent solution - postprocessing      :        0.6 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Eigensolver used                                  :            Block Lanczos
+Equation solver computational rate                :       18.8 Gflops
+
+Sum of disk space used on all processes           :      124.7 MB
+
+Sum of memory used on all processes               :      306.0 MB
+Sum of memory allocated on all processes          :     2880.0 MB
+Physical memory available                         :          8 GB
+Total amount of I/O written to disk               :        0.3 GB
+Total amount of I/O read from disk                :        0.2 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2025 R1         Build 25.1         UP20241202    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)     21 MB     Max Scratch Used(Master)     75 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)    74 MB |
+ |  Sum Database Used(All)        24 MB     Sum Scratch Used(All)       282 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =         10.062       Time  =  00:50:09          |
+ |        Elapsed Time (sec) =         13.000       Date  =  06/10/2025        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
